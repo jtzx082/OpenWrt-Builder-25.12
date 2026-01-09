@@ -13,7 +13,7 @@
 name: Update Checker
 
 env:
-  REPO_URL: https://github.com/immortalwrt/immortalwrt #检查源码地址
+  REPO_URL: https://github.com/openwrt/openwrt.git #检查源码地址
   REPO_BRANCH: openwrt-24.10
 
 on:
@@ -54,8 +54,8 @@ jobs:
         # 显式传递参数到 openwrt-builder.yml
         client-payload: |
           {
-            "repository_owner": "immortalwrt",
-            "repository_name": "immortalwrt",
+            "repository_owner": "openwrt",
+            "repository_name": "openwrt",
             "repository_branch": "openwrt-24.10"
           }
     
