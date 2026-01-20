@@ -17,8 +17,8 @@
 # echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 # echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 echo 'src-git nikki https://github.com/nikkinikki-org/OpenWrt-nikki.git;main' >>feeds.conf.default
-echo 'src-git luci_im https://github.com/immortalwrt/luci.git;openwrt-24.10' >>feeds.conf.default
-echo 'src-git packages_im https://github.com/immortalwrt/packages.git;openwrt-24.10' >>feeds.conf.default
+echo 'src-git luci_im https://github.com/immortalwrt/luci.git;openwrt-25.12' >>feeds.conf.default
+echo 'src-git packages_im https://github.com/immortalwrt/packages.git;openwrt-25.12' >>feeds.conf.default
 echo 'src-git istore https://github.com/linkease/istore;main' >>feeds.conf.default
 echo 'src-git packages_is https://github.com/jjm2473/packages.git;istoreos-24.10' >>feeds.conf.default
 echo 'src-git luci_is https://github.com/jjm2473/luci.git;istoreos-24.10' >>feeds.conf.default
