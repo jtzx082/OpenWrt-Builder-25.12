@@ -161,6 +161,11 @@ jobs:
         run: |
           cd openwrt
           echo -e "$(nproc) thread compile"
+          
+          # [FIX] 强制关闭 CI 环境变量，解决 Rust 编译报错: 
+          # `llvm.download-ci-llvm` cannot be set to `true` on CI
+          export CI=false
+          
           # 优化：更健壮的编译逻辑
           make -j$(nproc) || make -j1 || make -j1 V=s
           echo "status=success" >> $GITHUB_OUTPUT
